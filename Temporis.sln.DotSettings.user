@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ddb9913_002D1fa6_002D48fe_002Db0e8_002Df4453ac9d59a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Given_LocalDateTime_EuropeRomeAutumn20180230_ShouldBe_Ambiguous" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::481589FB-7F5C-4C80-A51F-3B612049F833::net9.0::Temporis.Core.Tests.ZoneConversionTests.Given_LocalDateTime_EuropeRomeAutumn20180230_ShouldBe_Ambiguous&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::481589FB-7F5C-4C80-A51F-3B612049F833::net9.0::Temporis.Core.Tests.ZoneConversionTests.Given_LocalDateTime_EuropeRomeSprint20180325_ShouldBe_Skipped&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

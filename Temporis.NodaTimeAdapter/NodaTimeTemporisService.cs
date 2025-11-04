@@ -8,11 +8,9 @@ public class NodaTimeTemporisService(IDateTimeZoneProvider tzdb) : ITemporisServ
 {
     private readonly IDateTimeZoneProvider _tzdb = tzdb ?? throw new ArgumentNullException(nameof(tzdb));
     public NodaTimeTemporisService() : this(DateTimeZoneProviders.Tzdb) { }
-    
-    // For testability
 
-    private LocalDateTime ToLocal(LocalDateTimeDto dto)
-        => new LocalDateTime(dto.Year, dto.Month, dto.Day, dto.Hour, dto.Minute, dto.Second);
+    private static LocalDateTime ToLocal(LocalDateTimeDto dto) =>
+        new(dto.Year, dto.Month, dto.Day, dto.Hour, dto.Minute, dto.Second);
     
     public ZoneConversionResult GetZoneConversion(LocalDateTimeDto local, string timeZoneId)
     {
@@ -25,7 +23,6 @@ public class NodaTimeTemporisService(IDateTimeZoneProvider tzdb) : ITemporisServ
         switch (map.Count)
         {
             case 0:
-                // skipped => nessun instant
                 return res;
             case 1:
             {
@@ -35,11 +32,11 @@ public class NodaTimeTemporisService(IDateTimeZoneProvider tzdb) : ITemporisServ
             }
             default:
             {
-                // safer: use ResolveAmbiguous
-                // var resolvedEarlier = zone.ResolveAmbiguous(ldt).Earlier;
-                // var resolvedLater = zone.ResolveAmbiguous(ldt).Later;
-                // res.InstantsIsoUtc.Add(resolvedEarlier.ToInstant().ToString());
-                // res.InstantsIsoUtc.Add(resolvedLater.ToInstant().ToString());
+                var first = map.First(); // earlier
+                var last  = map.Last();  // later
+                res.InstantsIsoUtc.Add(first.ToInstant().ToString());
+                if (last.ToInstant() != first.ToInstant())
+                    res.InstantsIsoUtc.Add(last.ToInstant().ToString());
                 return res;
             }
         }

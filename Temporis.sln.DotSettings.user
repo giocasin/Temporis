@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::481589FB-7F5C-4C80-A51F-3B612049F833::net9.0::Temporis.Core.Tests.ZoneConversionTests.Given_LocalDateTime_EuropeRomeAutumn20180230_ShouldBe_Ambiguous&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::481589FB-7F5C-4C80-A51F-3B612049F833::net9.0::Temporis.Core.Tests.ZoneConversionTests.Given_LocalDateTime_EuropeRomeSprint20180325_ShouldBe_Skipped&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::47E6C4D4-DFAA-4FAB-9683-2D64E804636A::net9.0::Temporis.Logging.Tests.LoggerExtensionTests.BeginTemporisScopeShouldAddScopeProperties&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

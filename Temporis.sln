@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temporis.ApiService", "Temp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temporis.Web", "Temporis.Web\Temporis.Web.csproj", "{510F9B2E-BDEE-48BC-AD4D-80FF12609A54}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E41ED59-9BE4-441F-993B-A632DDDA28A1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5E41ED59-9BE4-441F-993B-A632DDDA28A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporis.Core", "Temporis.Core\Temporis.Core.csproj", "{4ABE5ED2-4706-4AD7-B26E-05428627BC6B}"
 EndProject
@@ -19,6 +19,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{A7B12EF4-75E5-4852-909A-0C75599CFCF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporis.NodaTimeAdapter", "Temporis.NodaTimeAdapter\Temporis.NodaTimeAdapter.csproj", "{B56FA1C4-9524-4A21-9904-7CD07A752A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporis.Logging", "Temporis.Logging\Temporis.Logging.csproj", "{7F883384-FCD4-47E8-9AAF-205057359B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporis.Logging.Tests", "Temporis.Logging.Tests\Temporis.Logging.Tests.csproj", "{47E6C4D4-DFAA-4FAB-9683-2D64E804636A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +58,14 @@ Global
 		{B56FA1C4-9524-4A21-9904-7CD07A752A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56FA1C4-9524-4A21-9904-7CD07A752A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56FA1C4-9524-4A21-9904-7CD07A752A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F883384-FCD4-47E8-9AAF-205057359B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F883384-FCD4-47E8-9AAF-205057359B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F883384-FCD4-47E8-9AAF-205057359B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F883384-FCD4-47E8-9AAF-205057359B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E6C4D4-DFAA-4FAB-9683-2D64E804636A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E6C4D4-DFAA-4FAB-9683-2D64E804636A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E6C4D4-DFAA-4FAB-9683-2D64E804636A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E6C4D4-DFAA-4FAB-9683-2D64E804636A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +76,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{481589FB-7F5C-4C80-A51F-3B612049F833} = {5E41ED59-9BE4-441F-993B-A632DDDA28A1}
 		{B56FA1C4-9524-4A21-9904-7CD07A752A6B} = {A7B12EF4-75E5-4852-909A-0C75599CFCF3}
+		{47E6C4D4-DFAA-4FAB-9683-2D64E804636A} = {5E41ED59-9BE4-441F-993B-A632DDDA28A1}
 	EndGlobalSection
 EndGlobal
